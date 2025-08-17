@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar />
       <div
         className="bg-cover bg-center min-h-screen w-full"
-        style={{ backgroundImage: "url('/bg.png')" }}
+        style={{ backgroundImage: "url('/bg.svg')" }}
       >
         <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-center items-center min-h-screen gap-10 lg:gap-[102px] px-6 pt-36 lg:pt-0">
           {/* Left Content */}
@@ -51,7 +51,7 @@ export default function Home() {
       </div>
 
       <section>
-        <div className="max-w-[1080px] mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-0 lg:mt-[-170px] mt-10 px-4">
+        <div className="max-w-[1080px] mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-0 mt-10 px-4">
           {/* Left Stats */}
           <div className="max-w-[576px] flex flex-col sm:flex-row gap-6 lg:gap-0">
             <div className="bg-[#8DC8D0] w-[290px] h-[235px] flex flex-col justify-center items-center">
