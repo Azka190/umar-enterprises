@@ -14,12 +14,12 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row justify-center items-center min-h-screen gap-10 lg:gap-[102px] px-6 pt-36 lg:pt-0">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl leading-tight lg:leading-[60px] text-Heading_01 font-kanit font-bold">
-              Development company
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl leading-tight lg:leading-[60px] text-[#4397A4] font-kanit font-bold">
+              Umar Enterprises
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-[22px] text-Main_pallete_04 font-kanit mt-4">
-              Forward-thinking real estate developer, owner and investor with a
-              reputation
+              Designing & building residential and commercial projects with
+              modern style and lasting quality.{" "}
             </p>
 
             {/* Buttons */}
@@ -59,7 +59,7 @@ export default function Home() {
             <div className="bg-[#8DC8D0] w-[290px] h-[235px] flex flex-col justify-center items-center">
               <div>
                 <h1 className="font-kanit text-[70px] sm:text-[100px] font-semibold text-white -mt-6 sm:mt-[-40px]">
-                  147
+                  65+
                 </h1>
                 <p className="text-[#EBECEE] font-kanit text-lg sm:text-[22px] -mt-6 sm:mt-[-40px] text-center sm:text-left">
                   Completed Projects
@@ -70,7 +70,7 @@ export default function Home() {
             <div className="bg-[#4397A4] w-[290px] h-[235px] flex flex-col justify-center items-center">
               <div>
                 <h1 className="font-kanit text-[70px] sm:text-[100px] font-semibold text-white -mt-8 sm:mt-[-50px]">
-                  25+
+                  2+
                 </h1>
                 <p className="text-[#EBECEE] font-kanit text-lg sm:text-[22px] -mt-6 sm:mt-[-40px] text-center sm:text-left">
                   Years of Experience
@@ -86,43 +86,120 @@ export default function Home() {
             </h2>
 
             <div className="mt-8">
-              {/* Item 1 */}
               <div className="flex items-start sm:items-center gap-4 sm:gap-5">
-                <Image src="/engineer.svg" width={50} height={50} alt="img" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#8DC8D0"
+                  stroke="#4397A4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  className="w-10 h-10"
+                  role="img"
+                  aria-labelledby="ico-3d-2d"
+                >
+                  <title id="ico-3d-2d">Modern 2D & 3D Designs</title>
+
+                  <path d="M12 3l6 3-6 3-6-3 6-3z" />
+                  <path d="M18 6v6l-6 3-6-3V6" />
+                  <path d="M12 9v6" />
+
+                  <rect x="14.5" y="13.5" width="5" height="5" rx=".5" />
+                </svg>
                 <div>
-                  <h3 className="text-[#486A6F] font-sans text-base sm:text-lg font-bold">
-                    General Contract
-                  </h3>
                   <p className="text-[#41444B] font-sans text-sm sm:text-base mt-1">
-                    Quisque condimentum erat ac orci blandit, in sollicitudin
-                    tellus vestibulum
+                    Modern 2D & 3D Designs
                   </p>
                 </div>
               </div>
 
               {/* Item 2 */}
               <div className="flex items-start sm:items-center gap-4 sm:gap-5 mt-6">
-                <Image src="/ruler.svg" width={50} height={50} alt="img" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#8DC8D0"
+                  stroke="#4397A4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  className="w-10 h-10"
+                  role="img"
+                  aria-labelledby="ico-maps"
+                >
+                  <title id="ico-maps">Best Architectural Maps</title>
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path d="M9 4v16M15 4v16" />
+
+                  <path d="M12 7a3 3 0 0 1 3 3c0 2.3-3 6-3 6s-3-3.7-3-6a3 3 0 0 1 3-3z" />
+                  <circle cx="12" cy="10" r="1" />
+                </svg>
                 <div>
-                  <h3 className="text-[#486A6F] font-sans text-base sm:text-lg font-bold">
-                    Project Planning
-                  </h3>
                   <p className="text-[#41444B] font-sans text-sm sm:text-base mt-1">
-                    Nullam commodo tincidunt nisl, nec vehicula dui interdum nec
+                    Best Architectural Maps
                   </p>
                 </div>
               </div>
 
               {/* Item 3 */}
               <div className="flex items-start sm:items-center gap-4 sm:gap-5 mt-6">
-                <Image src="/shape.svg" width={50} height={50} alt="img" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#8DC8D0"
+                  stroke="#4397A4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  className="w-10 h-10"
+                  role="img"
+                  aria-labelledby="ico-finish"
+                >
+                  <title id="ico-finish">
+                    Construction with Perfect Finishing
+                  </title>
+
+                  <path d="M3 10l9-7 9 7" />
+                  <path d="M5 10v10h14V10" />
+                  <path d="M10 20v-5h4v5" />
+
+                  <path d="M7.5 15.5l1.8 1.8 3.2-3.2" />
+                </svg>
                 <div>
-                  <h3 className="text-[#486A6F] font-sans text-base sm:text-lg font-bold">
-                    Refurbishment
-                  </h3>
                   <p className="text-[#41444B] font-sans text-sm sm:text-base mt-1">
-                    Sed vitae aliquet ipsum, ut ornare lectus. Proin sed sem
-                    risus. Sed nunc
+                    Construction with Perfect Finishing
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start sm:items-center gap-4 sm:gap-5 mt-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#8DC8D0"
+                  stroke="#4397A4"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  className="w-10 h-10"
+                  role="img"
+                  aria-labelledby="ico-gov-private"
+                >
+                  <title id="ico-gov-private">
+                    Government & Private Sector Projects
+                  </title>
+
+                  <path d="M3 9l9-6 9 6z" />
+                  <path d="M4 20h16" />
+                  <path d="M6 10v8M10 10v8M14 10v8M18 10v8" />
+
+                  <rect x="8.5" y="12.5" width="7" height="5.5" rx="1" />
+                  <path d="M10.5 12.5v-1.5h3v1.5" />
+                </svg>
+                <div>
+                  <p className="text-[#41444B] font-sans text-sm sm:text-base mt-1">
+                    Government & Private Sector Projects
                   </p>
                 </div>
               </div>
@@ -139,19 +216,12 @@ export default function Home() {
               About Us
             </p>
             <h3 className="text-[#486A6F] font-kanit text-2xl sm:text-4xl lg:text-[55px] max-w-[555px] capitalize leading-snug lg:leading-[65px] font-semibold mx-auto lg:mx-0">
-              With our knowledge we guarente success
+            Who We Are:
             </h3>
-            <p className="text-[#00215B] font-sans font-bold text-sm sm:text-[15px] mt-4">
-              Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat
-              congue
+            <p className="text-[#41444B] font-sans  text-sm sm:text-[15px] mt-4">
+            We’re a leading government contractor and general order supplier in roads, bridges, buildings, parks, irrigation, electrical, sewerage, and water supply. Partnering with the government and private sectors, we build with excellence and integrity.
             </p>
-            <p className="font-sans text-sm sm:text-[15px] text-[#41444B] mt-5 sm:mt-7">
-              Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus
-              rutrum leo consectetur accumsan. Vivamus viverra ante turpis,
-              dignissim condimentum elit egestas sit amet. Phasellus faucibus
-              pellentesque
-            </p>
-
+            
             {/* Button */}
             <a
               href="#"
@@ -340,14 +410,14 @@ export default function Home() {
           />
 
           {/* Container */}
-          <div className="max-w-[1156px] mx-auto flex flex-col xl:flex-row gap-8 xl:gap-[58px] px-4 sm:px-6 lg:px-8 xl:px-0">
+          <div className="max-w-[1319px] mx-auto flex flex-col xl:flex-row gap-8 xl:gap-[58px] px-4 sm:px-6 lg:px-8 xl:px-0">
             {/* Address Card */}
             <div className="max-w-[480px] py-10 sm:py-16 px-6 sm:px-12 bg-white mt-[-60px] sm:mt-[-100px] shadow-2xl border-t-[7px] border-blue_1100">
               <p className="text-Black_1100 font-kanit text-sm font-light">
                 Company Address
               </p>
               <h3 className="text-Heading_01 font-kanit font-medium text-[22px] sm:text-[28px] xl:text-[34px] leading-[28px] sm:leading-[34px] mt-3 sm:mt-4">
-                Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA
+                Near Al-Syed Petroleum, Chakwal Road, Talagang
               </h3>
             </div>
 
@@ -377,10 +447,10 @@ export default function Home() {
                     Company Phones
                   </p>
                   <p className="text-blue_1200 font-kanit text-lg sm:text-[22px]">
-                    + 1 234 5678 098
+                    +92 335 9448216
                   </p>
                   <p className="text-blue_1200 font-kanit text-lg sm:text-[22px]">
-                    + 1 634 7638 654
+                    +92 335 9448216
                   </p>
                 </div>
               </div>
@@ -406,13 +476,10 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-Black_1100 font-kanit text-sm font-light">
-                    Dustro Emails
+                    Emails
                   </p>
                   <p className="text-blue_1200 font-kanit text-lg sm:text-[22px] mt-1 sm:mt-3">
-                    dustro@gmail.com
-                  </p>
-                  <p className="text-blue_1200 font-kanit text-lg sm:text-[22px]">
-                    dustro.info@gmail.com
+                    umarenterprises1302@gmail.com
                   </p>
                 </div>
               </div>

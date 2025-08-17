@@ -14,7 +14,7 @@ function Footer() {
         {/* Phone */}
         <p className="text-sm mt-6">CALL US TODAY</p>
         <p className="text-2xl sm:text-3xl font-semibold mt-1">
-          + 1 634 7638 654
+         0335 944 8216
         </p>
 
         {/* Social Icons */}
