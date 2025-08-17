@@ -90,7 +90,7 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#8DC8D0"
+                  fill="none"
                   stroke="#4397A4"
                   stroke-width="1.5"
                   stroke-linecap="round"
@@ -119,7 +119,7 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#8DC8D0"
+                  fill="none"
                   stroke="#4397A4"
                   stroke-width="1.5"
                   stroke-linecap="round"
@@ -147,7 +147,7 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#8DC8D0"
+                  fill="none"
                   stroke="#4397A4"
                   stroke-width="1.5"
                   stroke-linecap="round"
@@ -177,7 +177,7 @@ export default function Home() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#8DC8D0"
+                  fill="none"
                   stroke="#4397A4"
                   stroke-width="1.5"
                   stroke-linecap="round"
