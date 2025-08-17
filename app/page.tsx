@@ -41,9 +41,11 @@ export default function Home() {
 
           {/* Right Image */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-10 lg:mt-0">
-            <img
+            <Image
               src="/hero.png"
               alt="Hero"
+              width={800}
+              height={800}
               className="max-w-[90%] sm:max-w-[80%] lg:max-w-full h-auto"
             />
           </div>
@@ -274,7 +276,7 @@ export default function Home() {
           {/* Big Image (takes 2 rows on lg only) */}
           <div className="lg:row-span-2">
             <Image
-              src="/img6.png"
+              src="/img5.png"
               alt="logo"
               width={850}
               height={600}
