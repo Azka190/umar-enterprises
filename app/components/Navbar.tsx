@@ -7,7 +7,7 @@ function Navbar() {
 
   return (
     <div className="absolute w-full">
-      <div className="max-w-[1200px] mx-auto mt-6 flex items-center justify-between px-4 md:px-0">
+      <div className="max-w-[1200px] mx-auto mt-6 flex items-center justify-between px-4 lg:px-0">
         <a href="#">
           <Image src="/logo.png" width="118" height="103" alt="logo" />
         </a>

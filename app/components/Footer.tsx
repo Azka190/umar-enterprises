@@ -23,9 +23,14 @@ function Footer() {
     <img src="/twitter.svg" alt="twitter" className="w-5 h-5" />
   </div>
 
-  <div className="bg-white w-9 h-9 sm:w-10 sm:h-10 flex justify-center items-center rounded-full">
-    <img src="/facebook.svg" alt="facebook" className="w-5 h-5" />
-  </div>
+  <a 
+  href="https://www.facebook.com/profile.php?id=61564526306437" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="bg-white w-9 h-9 sm:w-10 sm:h-10 flex justify-center items-center rounded-full"
+>
+  <img src="/facebook.svg" alt="facebook" className="w-5 h-5" />
+</a>
 
   <div className="bg-white w-9 h-9 sm:w-10 sm:h-10 flex justify-center items-center rounded-full">
     <img src="/linkedin.svg" alt="linkedin" className="w-5 h-5" />

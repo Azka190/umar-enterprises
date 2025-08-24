@@ -247,91 +247,280 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="mt-16 px-4 sm:px-6 lg:px-0">
-        <div className="flex flex-col lg:flex-row w-full">
-          {/* Left Big Image */}
-          <div className="w-full lg:w-[850px]">
-            <Image
-              src="/img1.png"
-              width={850}
-              height={600}
-              alt="logo"
-              className="w-full h-[100%]"
-            />
-          </div>
-
-          {/* Right Cards */}
-          <div className="flex flex-col sm:flex-row lg:flex-row flex-wrap lg:flex-nowrap w-full lg:ml-6">
-            {/* Card 1 */}
-            <div className="relative w-full sm:w-1/2 lg:w-[356px] mt-6 lg:mt-0">
-              <Image
-                src="/img2.png"
-                width={356}
-                height={203}
-                alt="logo"
-                className="w-full h-auto"
-              />
-              <div className="absolute top-6 sm:top-10 left-5 sm:left-9 pr-4">
-                <h3 className="text-Heading_01 font-kanit text-2xl sm:text-[28px] md:text-[34px] lg:text-[40px] font-semibold leading-tight sm:leading-[40px]">
-                  Research & Analysis
-                </h3>
-                <p className="text-[#41444B] font-sans text-sm sm:text-base md:text-[17px] font-medium mt-4 sm:mt-6">
-                  Nullam tincidunt libero eu augue eleifend, vitae condimentum
-                  lacus
-                </p>
-              </div>
-              <div className="absolute bottom-4 sm:bottom-6 right-6 sm:right-10 bg-[#4397A4] w-[45px] h-[45px] sm:w-[55px] sm:h-[55px] flex justify-center items-center rounded-[5px]">
-                <Image src="/arrow.svg" width={25} height={25} alt="logo" />
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="relative w-full sm:w-1/2 lg:w-[356px] mt-6 lg:mt-0">
-              <Image
-                src="/img3.png"
-                width={356}
-                height={103}
-                alt="logo"
-                className="w-full h-auto"
-              />
-              <div className="absolute top-6 sm:top-10 left-5 sm:left-9 pr-4">
-                <h3 className="text-white font-kanit text-2xl sm:text-[28px] md:text-[34px] lg:text-[40px] font-semibold leading-tight sm:leading-[40px]">
-                  Industry Development
-                </h3>
-                <p className="text-white font-sans text-sm sm:text-base md:text-[17px] font-medium mt-4 sm:mt-6">
-                  Fusce id hendrerit lectus. Morbi vitae tortor sed turpis
-                  feugiat
-                </p>
-              </div>
-              <div className="absolute bottom-4 sm:bottom-6 right-6 sm:right-10 bg-[#8DC8D0] w-[45px] h-[45px] sm:w-[55px] sm:h-[55px] flex justify-center items-center rounded-[5px]">
-                <Image src="/arrow.svg" width={25} height={25} alt="logo" />
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="relative w-full sm:w-full lg:w-[356px] mt-6 lg:mt-0">
-              <Image
-                src="/img4.png"
-                width={356}
-                height={103}
-                alt="logo"
-                className="w-full h-auto"
-              />
-              <div className="absolute top-6 sm:top-10 left-5 sm:left-9 pr-4">
-                <h3 className="text-Heading_01 font-kanit text-2xl sm:text-[28px] md:text-[34px] lg:text-[40px] font-semibold leading-tight sm:leading-[40px]">
-                  Production Launch
-                </h3>
-                <p className="text-[#41444B] font-sans text-sm sm:text-base md:text-[17px] font-medium mt-4 sm:mt-6">
-                  Nullam tincidunt libero eu augue eleifend, vitae condimentum
-                  lacus
-                </p>
-              </div>
-              <div className="absolute bottom-4 sm:bottom-6 right-6 sm:right-10 bg-[#4397A4] w-[45px] h-[45px] sm:w-[55px] sm:h-[55px] flex justify-center items-center rounded-[5px]">
-                <Image src="/arrow.svg" width={25} height={25} alt="logo" />
-              </div>
-            </div>
-          </div>
+      <section id="special-offers" className="mt-16 px-4 sm:px-6 lg:px-0">
+        {/* Enhanced Section Header with Timer */}
+        <div className="max-w-[1200px] mx-auto text-center mb-12">
+          <p className="text-[#4397A4] font-kanit text-sm font-medium uppercase tracking-wider">
+            Limited Time Offers
+          </p>
+          <h2 className="text-Heading_01 font-kanit text-3xl sm:text-4xl lg:text-[55px] font-semibold leading-tight mt-2">
+            Special Construction Deals
+          </h2>
+          <p className="text-Main_pallete_04 font-sans text-lg mt-4 max-w-2xl mx-auto">
+            Take advantage of our exclusive offers on construction services, materials, and project management
+          </p>
         </div>
+
+        <div className="max-w-[1200px] mx-auto gap-6 flex flex-wrap">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl w-[65%]">
+              <Image
+                src="/img1.png"
+                width={850}
+                height={600}
+                alt="Complete Construction Package"
+                className="w-full h-[100%] transition-transform duration-700 group-hover:scale-105"
+              />
+              
+              {/* Animated Discount Badge */}
+              <div className="absolute top-6 left-6 animate-bounce">
+                <div className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-4 rounded-2xl shadow-2xl transform rotate-3">
+                  <div className="text-center">
+                    <div className="flex items-center justify-center gap-2 mb-1">
+                      <span className="text-yellow-300 text-lg">🔥</span>
+                      <span className="text-sm font-bold">FLASH SALE</span>
+                    </div>
+                    <p className="text-sm font-medium">SAVE UP TO</p>
+                    <p className="text-4xl font-black">25%</p>
+                    <p className="text-xs opacity-90">ON COMPLETE PROJECTS</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Enhanced Offer Details */}
+              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-2xl border border-gray-100">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-Heading_01 font-kanit text-2xl font-bold mb-2">
+                      Complete Construction Package
+                    </h3>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-green-600 text-sm font-medium">✓</span>
+                      <span className="text-Black_1100 font-sans text-sm">Design & Planning</span>
+                    </div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-green-600 text-sm font-medium">✓</span>
+                      <span className="text-Black_1100 font-sans text-sm">Materials & Labor</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-green-600 text-sm font-medium">✓</span>
+                      <span className="text-Black_1100 font-sans text-sm">Project Management</span>
+                    </div>
+                  </div>
+                  
+                  <div className="text-right">
+                    <div className="bg-gradient-to-r from-[#4397A4] to-[#5BCCDE] text-white px-4 py-2 rounded-lg mb-2">
+                      <span className="text-xs opacity-90">WAS</span>
+                      <div className="text-lg font-bold line-through">$60,000</div>
+                    </div>
+                    <div className="text-3xl font-black text-[#4397A4]">$45,000</div>
+                    <div className="text-sm text-green-600 font-bold">SAVE $15,000</div>
+                  </div>
+                </div>
+                
+                <div className="flex items-center justify-between pt-4 border-t border-gray-200">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                    <span>Limited Availability</span>
+                  </div>
+                  <a href="#contact" className="bg-gradient-to-r from-[#4397A4] to-[#5BCCDE] hover:from-[#5BCCDE] hover:to-[#4397A4] text-white px-6 py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Claim This Offer →
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl w-[30%] hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative">
+                <Image
+                  src="/img2.png"
+                  width={356}
+                  height={203}
+                  alt="Design Services Special Offer"
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                />
+                
+                {/* Enhanced Discount Badge */}
+                <div className="absolute top-4 right-4">
+                  <div className="bg-gradient-to-r from-red-500 to-red-600 text-white px-4 py-2 rounded-full shadow-lg transform rotate-12 animate-pulse">
+                    <span className="text-sm font-black">-30%</span>
+                  </div>
+                </div>
+
+                {/* Popular Badge */}
+                <div className="absolute top-4 left-4">
+                  <div className="bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-xs font-bold">
+                    ⭐ POPULAR
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="font-kanit text-2xl font-bold mb-3">
+                  Design Services
+                </h3>
+                <p className="text-white/90 font-sans text-sm mb-4 leading-relaxed">
+                  Professional 2D & 3D architectural designs with modern software and expert consultation
+                </p>
+                
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl font-black text-yellow-300">$2,500</span>
+                    <span className="text-lg text-white/70 line-through">$3,500</span>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-green-300 font-medium">You Save</div>
+                    <div className="text-lg font-bold text-green-300">$1,000</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-1 text-sm text-white/80">
+                    <span>⏱️</span>
+                    <span>2-3 weeks</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-sm text-white/80">
+                    <span>📱</span>
+                    <span>Free consultation</span>
+                  </div>
+                </div>
+
+                <button className="w-full bg-gradient-to-r from-[#4397A4] to-[#5BCCDE] hover:from-[#5BCCDE] hover:to-[#4397A4] text-white py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                  Get Design Package
+                  <span className="text-lg">→</span>
+                </button>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl w-[30%] hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative">
+                <Image
+                  src="/img3.png"
+                  width={356}
+                  height={103}
+                  alt="Material Supply Special Offer"
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                />
+                
+                {/* Enhanced Discount Badge */}
+                <div className="absolute top-4 right-4">
+                  <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full shadow-lg transform -rotate-12">
+                    <span className="text-sm font-black">-20%</span>
+                  </div>
+                </div>
+
+                {/* Best Value Badge */}
+                <div className="absolute top-4 left-4">
+                  <div className="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    💎 BEST VALUE
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="font-kanit text-2xl font-bold mb-3">
+                  Material Supply
+                </h3>
+                <p className="text-white/90 font-sans text-sm mb-4 leading-relaxed">
+                  Premium construction materials including cement, steel, and finishing materials at wholesale prices
+                </p>
+                
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl font-black text-[#8DC8D0]">$8,000</span>
+                    <span className="text-lg text-white/70 line-through">$10,000</span>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-green-300 font-medium">You Save</div>
+                    <div className="text-lg font-bold text-green-300">$2,000</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-1 text-sm text-white/80">
+                    <span>🚚</span>
+                    <span>Free delivery</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-sm text-white/80">
+                    <span>🔒</span>
+                    <span>Quality guarantee</span>
+                  </div>
+                </div>
+
+                <button className="w-full bg-gradient-to-r from-[#8DC8D0] to-[#4397A4] hover:from-[#4397A4] hover:to-[#8DC8D0] text-white py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                  Order Materials
+                  <span className="text-lg">→</span>
+                </button>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl w-[30%] hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="relative">
+                <Image
+                  src="/img4.png"
+                  width={356}
+                  height={103}
+                  alt="Project Management Special Offer"
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                />
+                
+                {/* Enhanced Discount Badge */}
+                <div className="absolute top-4 right-4">
+                  <div className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full shadow-lg transform rotate-6">
+                    <span className="text-sm font-black">-15%</span>
+                  </div>
+                </div>
+
+                {/* New Service Badge */}
+                <div className="absolute top-4 left-4">
+                  <div className="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    🆕 NEW
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="font-kanit text-2xl font-bold mb-3">
+                  Project Management
+                </h3>
+                <p className="text-white/90 font-sans text-sm mb-4 leading-relaxed">
+                  Expert project supervision and management services ensuring quality and timely completion
+                </p>
+                
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl font-black text-[#4397A4]">$4,250</span>
+                    <span className="text-lg text-white/70 line-through">$5,000</span>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-sm text-green-300 font-medium">You Save</div>
+                    <div className="text-lg font-bold text-green-300">$750</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex items-center gap-1 text-sm text-white/80">
+                    <span>👨‍💼</span>
+                    <span>Expert team</span>
+                  </div>
+                  <div className="flex items-center gap-1 text-sm text-white/80">
+                    <span>📊</span>
+                    <span>Daily reports</span>
+                  </div>
+                </div>
+
+                <button className="w-full bg-gradient-to-r from-[#4397A4] to-[#5BCCDE] hover:from-[#5BCCDE] hover:to-[#4397A4] text-white py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center gap-2">
+                  Start Project
+                  <span className="text-lg">→</span>
+                </button>
+              </div>
+            </div>
+        </div>
+
+        
+    
       </section>
 
       <section id="services" className="mt-[100px] max-w-[1180px] mx-auto px-4">
@@ -398,6 +587,26 @@ export default function Home() {
           <div className="hidden lg:block lg:col-start-3"></div>
         </div>
       </section>
+
+        {/* Call to Action */}
+        <div className="max-w-[1200px] mx-auto text-center mt-12 px-4">
+          <div className="bg-gradient-to-r from-[#4397A4] to-[#5BCCDE] p-8 rounded-2xl text-white">
+            <h3 className="font-kanit text-2xl sm:text-3xl font-semibold mb-4">
+              Ready to Start Your Project?
+            </h3>
+            <p className="text-lg mb-6 max-w-2xl mx-auto">
+              Contact us today to discuss your construction needs and take advantage of these special offers
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="#contact" className="bg-white text-[#4397A4] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors">
+                Get Free Quote
+              </a>
+              <a href="tel:+923359448216" className="border-2 border-white text-white hover:bg-white hover:text-[#4397A4] px-8 py-3 rounded-lg font-semibold transition-colors">
+                Call Now
+              </a>
+            </div>
+          </div>
+        </div>
 
       <section id="contact" className="mt-[100px] mb-[50px]">
         <div>
